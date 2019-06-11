@@ -1,0 +1,22 @@
+<a href="{% url 'about' %}">ABOUT</a>
+
+<head>
+    <style>
+        .contained {
+            background-color: blueviolet;
+            width: 420px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contained">
+        <h1>Wordcount를 만들어봅시다.</h1>
+        <form action="{% url 'count' %}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="Count!" />
+        </form>
+    </div>
+</body>
